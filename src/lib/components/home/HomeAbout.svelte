@@ -647,7 +647,7 @@
 
 				<!-- Download CV Button -->
 				<a
-					href="https://drive.google.com/file/d/1jFFc7Af7clmWZ1cfcVVP78AuTmMO4Q_4/view?usp=sharing"
+					href="https://github.com/gustavodslara/gustavodslara.github.io/raw/refs/heads/master/cv-gusdsl-ptbr.pdf"
 					target="_blank"
 					rel="noopener"
 					class="inline-block self-start bg-[#dd206b] text-white px-8 py-3 rounded transition-all duration-300 font-medium shadow-[0_2px_8px_rgba(221,32,107,0.3)] hover:bg-[#c01252] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(221,32,107,0.4)] no-underline"
