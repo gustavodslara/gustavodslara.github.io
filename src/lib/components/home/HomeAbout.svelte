@@ -645,7 +645,6 @@
 					</div>
 				</div>
 
-				<!-- Download CV Button -->
 				<a
 					href="https://github.com/gustavodslara/gustavodslara.github.io/raw/refs/heads/master/cv-gusdsl-ptbr.pdf"
 					target="_blank"
@@ -655,13 +654,11 @@
 					Baixar CV
 				</a>
 
-				<!-- Tech Stack Section - Below CV Button -->
 				<div class="mt-8 md:mt-12">
 					<div class="flex items-end gap-3 mb-4 md:mb-6">
 						<h4 class="text-xl md:text-2xl font-normal whitespace-nowrap">Stack</h4>
 					</div>
 
-					<!-- Languages -->
 					<div class="mb-6">
 						<h5 class="text-sm md:text-base font-semibold mb-3 text-gray-600">Linguagens</h5>
 						<div class="flex flex-wrap gap-2 md:gap-3 justify-start">
@@ -684,7 +681,6 @@
 						</div>
 					</div>
 
-					<!-- Frontend -->
 					<div class="mb-6">
 						<h5 class="text-sm md:text-base font-semibold mb-3 text-gray-600">Frontend</h5>
 						<div class="flex flex-wrap gap-2 md:gap-3 justify-start">
