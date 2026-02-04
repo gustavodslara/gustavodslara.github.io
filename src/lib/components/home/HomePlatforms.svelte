@@ -20,7 +20,7 @@
 
 <div class="home-platforms relative z-20 pt-0 pb-8 md:pt-0 md:pb-16 px-4 md:px-8 lg:px-12 bg-white">
 	<div class="max-w-7xl mx-auto">
-		<!-- Coursera Platform Card -->
+		<!--
 		<a
 			href="https://abcdario.online"
 			target="_blank"
@@ -54,6 +54,7 @@
 				</div>
 			</div>
 		</a>
+		-->
 
 		<div class="h-8"></div>
 

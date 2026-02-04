@@ -206,6 +206,7 @@
 			demoUrl: 'https://tropicaliacraft.online/',
 			githubUrl: 'https://github.com/gustavodslara/ng-tropicaliacraft-landing-page'
 		},
+		/*
 		{
 			id: 2,
 			name: 'svelte-threejs-tech-store',
@@ -216,17 +217,17 @@
 			demoUrl: 'https://techstore.gustavodslara.pro/',
 			githubUrl: 'https://github.com/gustavodslara/svelte-threejs-tech-store'
 		},
+		*/
 		{
-			id: 3,
+			id: 2,
 			name: 'Servidores do TropicaliaCraft e Serviços em Go/Fiber',
 			image: '/assets/img/apps/server.webp',
 			link: 'https://play.google.com/store/apps/details?id=com.hundi.social',
 			caption:
 				'Gestão da Infraestrutura dos servidores + Versionamento do Fabric, Paper e mods/plugins, e deploy automatizado com GitHub Actions na Azure',
 			background: '#3CE79F',
-			full: true,
 			demoUrl: 'https://ecraft.tropicaliacraft.online/?server=crossplay.tropicaliacraft.online',
-			githubUrl: 'https://github.com/organizations/tropicaliacraft/repositories/'
+			githubUrl: 'https://github.com/tropicaliacraft/java-bedrock-server'
 		}
 	];
 
@@ -245,6 +246,7 @@
 	// Static logos (will be replaced with GitHub API data)
 	// TODO: Fetch from GitHub API - https://api.github.com/users/gustavodslara/repos
 	const logos = [
+		/*
 		{
 			src: '/assets/img/logos/phanteon.png',
 			name: 'Pantheon Launcher',
@@ -254,6 +256,7 @@
 			githubUrl: 'https://github.com/gustavodslara/pantheon-launcher',
 			demoUrl: 'https://pantheon.gustavodslara.pro/'
 		},
+		*/
 		{
 			src: '/assets/img/logos/voxelcanvas.png',
 			name: 'Voxel Canvas',
@@ -281,6 +284,7 @@
 			githubUrl: 'https://github.com/gustavodslara/PrismLauncher/',
 			demoUrl: 'https://tropicaliacraft.online/'
 		},
+		/*
 		{
 			src: '/assets/img/logos/polyui.png',
 			name: 'PolyUI',
@@ -290,6 +294,8 @@
 			githubUrl: 'https://github.com/gustavodslara/poly-ui',
 			demoUrl: 'https://polyui.gustavodslara.pro/'
 		},
+		},
+		/*
 		{
 			src: '/assets/img/logos/argusplayer.png',
 			name: 'Argus Player',
@@ -299,6 +305,8 @@
 			githubUrl: 'https://github.com/gustavodslara/argus-player',
 			demoUrl: 'https://argus.gustavodslara.pro/'
 		},
+		},
+		/*
 		{
 			src: '/assets/img/logos/virtualtour.png',
 			name: 'WebXR Tour Virtual',
@@ -308,6 +316,7 @@
 			githubUrl: 'https://github.com/gustavodslara/svelte-threejs-tour-virtual',
 			demoUrl: 'https://tourvirtual.gustavodslara.pro/'
 		}
+		*/
 	];
 </script>
 
@@ -423,9 +432,9 @@
 	<div class="h-12 md:h-16"></div>
 
 	<!-- More Personal Projects Section (GitHub API - Interactive) -->
-	<div class="mb-6 md:mb-14">
+	<!-- <div class="mb-6 md:mb-14">
 		<h2 class="text-3xl md:text-4xl font-medium whitespace-nowrap">Mais Projetos Pessoais</h2>
-	</div>
+	</div> -->
 
 	<div class="max-w-7xl mx-auto">
 		<div>

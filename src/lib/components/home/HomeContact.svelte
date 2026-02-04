@@ -69,7 +69,7 @@
 
 		<!-- Contact Buttons -->
 		<div
-			class="bg-gray-50 rounded-xl p-6 md:p-10 transition-all duration-600 delay-200"
+			class="bg-white rounded-xl p-6 md:p-10 transition-all duration-600 delay-200"
 			class:opacity-100={visible}
 			class:translate-y-0={visible}
 			class:opacity-0={!visible}

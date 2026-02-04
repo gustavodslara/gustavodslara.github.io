@@ -77,10 +77,18 @@
 		for (let i = sections.length - 1; i >= 0; i--) {
 			const element = document.getElementById(sections[i]);
 			if (element) {
-				// For window scroll, offsetTop is usually enough if body is relative
-				// For container scroll, we might need more complex logic if container is offset
-				// But generally offsetTop works if we are comparing against scrollY of the container/window
-				if (element.offsetTop <= scrollPosition) {
+				let elementTop = 0;
+				
+				if (scrollContainer) {
+					const rect = element.getBoundingClientRect();
+					const containerRect = scrollContainer.getBoundingClientRect();
+					elementTop = rect.top - containerRect.top + scrollContainer.scrollTop;
+				} else {
+					const rect = element.getBoundingClientRect();
+					elementTop = rect.top + window.scrollY;
+				}
+
+				if (elementTop <= scrollPosition) {
 					activeSection = sections[i];
 					break;
 				}

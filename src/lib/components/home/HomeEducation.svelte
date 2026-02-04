@@ -18,7 +18,7 @@
 			openEducation = new Set([1]);
 		} else {
 			// On desktop, open all items
-			openEducation = new Set([1]);
+			openEducation = new Set([1, 2, 3]);
 		}
 
 		// Wait for DOM to be fully ready before initializing animations
@@ -90,6 +90,34 @@
 				'Curso Superior de Tecnologia em Sistemas para Internet com foco em desenvolvimento web, programação, banco de dados e arquitetura de aplicações.',
 			],
 			status: 'completed'
+		},
+		{
+			id: 2,
+			institution: 'Anhanguera',
+			logo: '/assets/img/logos/anhanguera.png',
+			degree: 'MBA',
+			field: 'Engenharia de automação e IoT',
+			startDate: '2023',
+			endDate: '2023',
+			color: '#FF6B35',
+			description: [
+				'MBA em Engenharia de Automação e IoT, focado em tecnologias de automação industrial, Internet das Coisas (IoT), sistemas embarcados e integração de processos industriais.',
+			],
+			status: 'completed'
+		},
+		{
+			id: 3,
+			institution: 'Anhanguera',
+			logo: '/assets/img/logos/anhanguera.png',
+			degree: 'MBA',
+			field: 'Gestão da Tecnologia de Informação',
+			startDate: '2025',
+			endDate: '2025',
+			color: '#4CAF50',
+			description: [
+				'MBA em Gestão da Tecnologia da Informação, abrangendo estratégias de TI, gestão de projetos tecnológicos, governança de TI e liderança em ambientes digitais.',
+			],
+			status: 'completed'
 		}
 	];
 
@@ -103,7 +131,7 @@
 	}
 </script>
 
-<div id="education" class="home-education pt-8 md:pt-16 px-4 md:px-8 lg:px-12 bg-gray-50">
+<div id="education" class="home-education pt-8 md:pt-16 px-4 md:px-8 lg:px-12 bg-white">
 	<!-- Section Header -->
 	<div class="mb-6 md:mb-8">
 		<h2 class="text-3xl md:text-4xl font-medium whitespace-nowrap">Educação</h2>
@@ -118,7 +146,7 @@
 			<!-- Education Items -->
 			{#each educationItems as edu, i}
 				<div
-					class="relative pl-16 cursor-pointer group"
+					class="relative pl-16 cursor-pointer group mb-8"
 					style="animation-delay: {0.3 + i * 0.1}s;"
 					on:click={() => toggleEducation(edu.id)}
 					on:keydown={(e) => e.key === 'Enter' && toggleEducation(edu.id)}

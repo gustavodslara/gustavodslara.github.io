@@ -6,6 +6,7 @@
 	gsap.registerPlugin(ScrollTrigger);
 
 	let openJobs: Set<number> = new Set();
+	let selectedExpertise = 0;
 	let isMobile = false;
 
 	onMount(() => {
@@ -131,8 +132,7 @@
 				'Padrão Circuit Breaker',
 				'TDD/BDD',
 				'CQRS & Event Sourcing'
-			],
-			colored: true
+			]
 		},
 		{
 			title: 'Desenvolvimento Full-Stack',
@@ -636,7 +636,7 @@
 				<!-- Stats -->
 				<div class="flex flex-wrap gap-8 md:gap-12 mb-8 md:mb-14">
 					<div>
-						<h2 class="text-4xl md:text-5xl font-extralight mb-3">7+</h2>
+						<h2 class="text-4xl md:text-5xl font-extralight mb-3">8+</h2>
 						<h4 class="text-lg md:text-xl font-normal">Anos de Experiência</h4>
 					</div>
 					<div>
@@ -995,13 +995,17 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 			{#each expertise as item, i}
 				<div
-					class="p-6 md:p-8 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-					class:bg-gradient-to-br={item.colored}
-					class:from-indigo-500={item.colored}
-					class:to-purple-600={item.colored}
-					class:text-white={item.colored}
-					class:bg-gray-100={!item.colored}
+					class="p-6 md:p-8 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+					class:bg-gradient-to-br={selectedExpertise === i}
+					class:from-[#dd206b]={selectedExpertise === i}
+					class:to-[#4ca98c]={selectedExpertise === i}
+					class:text-white={selectedExpertise === i}
+					class:bg-gray-100={selectedExpertise !== i}
 					style="animation-delay: {0.4 + i * 0.1}s;"
+					on:click={() => (selectedExpertise = i)}
+					on:keydown={(e) => e.key === 'Enter' && (selectedExpertise = i)}
+					role="button"
+					tabindex="0"
 				>
 					<h4 class="text-xl md:text-2xl font-semibold mb-4">{item.title}</h4>
 					<ul class="list-none p-0 m-0">
