@@ -91,34 +91,34 @@
 			],
 			status: 'completed'
 		},
-		{
-			id: 2,
-			institution: 'Anhanguera',
-			logo: '/assets/img/logos/anhanguera.png',
-			degree: 'MBA',
-			field: 'Engenharia de automação e IoT',
-			startDate: '2023',
-			endDate: '2023',
-			color: '#FF6B35',
-			description: [
-				'MBA em Engenharia de Automação e IoT, focado em tecnologias de automação industrial, Internet das Coisas (IoT), sistemas embarcados e integração de processos industriais.',
-			],
-			status: 'completed'
-		},
-		{
-			id: 3,
-			institution: 'Anhanguera',
-			logo: '/assets/img/logos/anhanguera.png',
-			degree: 'MBA',
-			field: 'Gestão da Tecnologia de Informação',
-			startDate: '2025',
-			endDate: '2025',
-			color: '#4CAF50',
-			description: [
-				'MBA em Gestão da Tecnologia da Informação, abrangendo estratégias de TI, gestão de projetos tecnológicos, governança de TI e liderança em ambientes digitais.',
-			],
-			status: 'completed'
-		}
+		// {
+		// 	id: 2,
+		// 	institution: 'Anhanguera',
+		// 	logo: '/assets/img/logos/anhanguera.png',
+		// 	degree: 'MBA',
+		// 	field: 'Engenharia de automação e IoT',
+		// 	startDate: '2023',
+		// 	endDate: '2023',
+		// 	color: '#FF6B35',
+		// 	description: [
+		// 		'MBA em Engenharia de Automação e IoT, focado em tecnologias de automação industrial, Internet das Coisas (IoT), sistemas embarcados e integração de processos industriais.',
+		// 	],
+		// 	status: 'completed'
+		// },
+		// {
+		// 	id: 3,
+		// 	institution: 'Anhanguera',
+		// 	logo: '/assets/img/logos/anhanguera.png',
+		// 	degree: 'MBA',
+		// 	field: 'Gestão da Tecnologia de Informação',
+		// 	startDate: '2025',
+		// 	endDate: '2025',
+		// 	color: '#4CAF50',
+		// 	description: [
+		// 		'MBA em Gestão da Tecnologia da Informação, abrangendo estratégias de TI, gestão de projetos tecnológicos, governança de TI e liderança em ambientes digitais.',
+		// 	],
+		// 	status: 'completed'
+		// }
 	];
 
 	function toggleEducation(id: number) {
